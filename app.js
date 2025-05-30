@@ -42,7 +42,8 @@ app.use(helmet({
     directives: {
       "default-src": ["'self'"],
       "script-src": ["'self'"],
-      "script-src-attr": ["'none'"]
+      "script-src-attr": ["'none'"],
+      "frame-ancestors": ["'none"]
     }
   }
 }));
