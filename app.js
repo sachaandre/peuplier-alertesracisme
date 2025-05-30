@@ -45,7 +45,8 @@ app.use(helmet({
       "script-src": ["'self'"],
       "script-src-attr": ["'none'"],
       "style-src": ["'self'", "https://fonts.bunny.net/"],
-      "style-src-elem": ["'self'", "https://fonts.bunny.net/"]
+      "style-src-elem": ["'self'", "https://fonts.bunny.net/"],
+      "font-src": ["'self'", "https://fonts.bunny.net/"]
     }
   },
   xFrameOptions: false
