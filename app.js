@@ -43,7 +43,9 @@ app.use(helmet({
     directives: {
       "default-src": ["'self'"],
       "script-src": ["'self'"],
-      "script-src-attr": ["'none'"]
+      "script-src-attr": ["'none'"],
+      "style-src": ["'self'", "https://fonts.bunny.net/"],
+      "style-src-elem": ["'self'", "https://fonts.bunny.net/"]
     }
   },
   xFrameOptions: false
