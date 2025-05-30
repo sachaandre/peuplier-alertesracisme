@@ -20,7 +20,7 @@ block content
                 li(class="bg-gray-300 text-gray-950 text-sm rounded-sm px-3 py-1") Archivé 
               if val.state=='Published'
                 li(class="bg-emerald-300 text-emerald-950 text-sm rounded-sm px-3 py-1") Publié
-              li(class="text-sm rounded-sm px-3 py-1 border border-indigo-500 text-indigo-500 ml-2")=val.readable_date
+              li(class="text-sm rounded-sm px-3 py-1 border border-red-500 text-red-500 ml-2")=val.readable_date
             p=val.excerpt
           div
             a(href=val.url).peuplier-action-btn.peuplier-secondary.text-center.w-full.mt-6 Lire le détail

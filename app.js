@@ -115,15 +115,14 @@ app.use(function(err, req, res, next) {
 // Set `strictQuery: false` to globally opt into filtering by properties that aren't in the schema
 // Included because it removes preparatory warnings for Mongoose 7.
 // See: https://mongoosejs.com/docs/migrating_to_6.html#strictquery-is-removed-and-replaced-by-strict
+var user_controller = require("./controllers/userConstroller")
 mongoose.set("strictQuery", false);
 const mongoDB = process.env.ATLAS_MONGO_URL;
 const mongoDBDev = "mongodb://localhost:27017/Peuplier_DB_Dev"
 main().catch((err) => console.log(err));
 async function main() {
-  if (process.env.CURRENT_ENV == "dev") await mongoose.connect(mongoDBDev);
-  if (process.env.CURRENT_ENV == "prod") await mongoose.connect(mongoDB);
+  await mongoose.connect(mongoDB);
   //USERS INIT
-  var user_controller = require("./controllers/userConstroller")
   user_controller.createFirstUser();
 }
 

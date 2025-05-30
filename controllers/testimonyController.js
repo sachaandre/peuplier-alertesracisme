@@ -15,7 +15,7 @@ const { OsunyOwl, OsunyUtility } = require("osuny-owl");
  * Besoin de rendre ça accessible par UI
  */
 
-const owl = new OsunyOwl(process.env.OSUNY_WEBSITE_ID, "https://sachaandre.osuny.org/api/osuny/v1/")
+const owl = new OsunyOwl(process.env.OSUNY_WEBSITE_ID, "https://alertesracisme.osuny.org/api/osuny/v1/")
 owl.addCategory_id(process.env.OSUNY_CATEGORY_ID) // ajout de la catégorie API du site
 
 
@@ -195,7 +195,7 @@ exports.testimony_publish_post = asyncHandler(async (req, res, next) => {
         }
     ]
 
-    let dataheader = ["Libellé", "Données"]
+    let dataheader = []
 
     const testimonyContentBlock = OsunyUtility.createChapter(
         testimony.testimony,

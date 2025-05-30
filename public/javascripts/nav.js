@@ -9,7 +9,7 @@ for(let toggleElement of toggleElements){
         menu.classList.toggle("block");
         menu.classList.toggle("transition-all");
 
-        toggleElement.classList.toggle("bg-indigo-400");
+        toggleElement.classList.toggle("bg-red-400");
         toggleElement.classList.toggle("rounded-full");
         toggleElement.classList.toggle("shadow-md");
 
