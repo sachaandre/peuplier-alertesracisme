@@ -39,11 +39,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet({
   contentSecurityPolicy: {
+    useDefaults: false,
     directives: {
       "default-src": ["'self'"],
       "script-src": ["'self'"],
-      "script-src-attr": ["'none'"],
-      "frame-ancestors": ["'none"]
+      "script-src-attr": ["'none'"]
     }
   }
 }));
