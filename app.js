@@ -45,7 +45,8 @@ app.use(helmet({
       "script-src": ["'self'"],
       "script-src-attr": ["'none'"]
     }
-  }
+  },
+  xFrameOptions: false
 }));
 
 //let secureCookie = process.env.CURRENT_ENV === "dev" ? false : true;
