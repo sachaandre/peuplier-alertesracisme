@@ -547,6 +547,12 @@
   .text-red-200 {
     color: var(--color-red-200);
   }
+  .text-red-300 {
+    color: var(--color-red-300);
+  }
+  .text-red-400 {
+    color: var(--color-red-400);
+  }
   .text-red-500 {
     color: var(--color-red-500);
   }
@@ -629,14 +635,29 @@
       grid-column-start: 2;
     }
   }
+  .md\:col-start-3 {
+    @media (width >= 48rem) {
+      grid-column-start: 3;
+    }
+  }
   .md\:col-end-9 {
     @media (width >= 48rem) {
       grid-column-end: 9;
     }
   }
+  .md\:col-end-10 {
+    @media (width >= 48rem) {
+      grid-column-end: 10;
+    }
+  }
   .lg\:col-span-2 {
     @media (width >= 64rem) {
       grid-column: span 2 / span 2;
+    }
+  }
+  .lg\:col-span-3 {
+    @media (width >= 64rem) {
+      grid-column: span 3 / span 3;
     }
   }
   .lg\:col-span-4 {
@@ -649,9 +670,24 @@
       grid-column: span 5 / span 5;
     }
   }
+  .lg\:col-start-2 {
+    @media (width >= 64rem) {
+      grid-column-start: 2;
+    }
+  }
   .lg\:col-start-3 {
     @media (width >= 64rem) {
       grid-column-start: 3;
+    }
+  }
+  .lg\:col-end-9 {
+    @media (width >= 64rem) {
+      grid-column-end: 9;
+    }
+  }
+  .lg\:col-end-10 {
+    @media (width >= 64rem) {
+      grid-column-end: 10;
     }
   }
   .lg\:grid-cols-3 {
@@ -667,6 +703,11 @@
   .lg\:grid-cols-9 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(9, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-10 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(10, minmax(0, 1fr));
     }
   }
 }
